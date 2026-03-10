@@ -49,7 +49,7 @@ const Header = () => {
           >
             <Logo 
               className="transform group-hover:scale-105 transition-transform duration-300" 
-              imageClassName={isScrolled ? "h-12 md:h-16" : "h-16 md:h-28"}
+              imageClassName={isScrolled ? "h-10 md:h-16" : "h-12 md:h-24"}
               textClassName={isScrolled ? "text-lg md:text-xl" : "text-xl md:text-2xl"}
             />
           </a>

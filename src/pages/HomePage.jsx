@@ -15,13 +15,13 @@ const HomePage = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center pt-12" id="inicio">
+      <section className="relative min-h-screen flex items-center justify-center pt-24 md:pt-16" id="inicio">
         {/* Background Image */}
         <div className="absolute inset-0 z-0" style={{
         backgroundImage: `url(${heroBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center 12%',
-        backgroundAttachment: 'fixed'
+        backgroundAttachment: 'scroll'
       }}>
           {/* Branding Overlays */}
           <div className="absolute inset-0 bg-[#00BCD4]/26 mix-blend-multiply"></div>
@@ -30,19 +30,19 @@ const HomePage = () => {
 
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10 text-center pt-20">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
             Servicio técnico en Linares,<br />
             <span className="text-[#00BCD4]">rápido y sin enredos</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto drop-shadow-md">
+          <p className="text-base sm:text-lg md:text-2xl text-gray-200 mb-10 md:mb-12 max-w-4xl mx-auto drop-shadow-md px-2">
             Te explicamos todo en simple, llegamos a tiempo y dejamos tu equipo
             funcionando con respaldo real.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="https://wa.me/56974962358?text=Hola%2C%20quiero%20solicitar%20una%20visita%20t%C3%A9cnica" target="_blank" rel="noopener noreferrer" className="bg-[#00BCD4] hover:bg-[#0097A7] text-white px-12 py-4 text-lg font-semibold rounded-full shadow-xl transform hover:scale-105 transition-all duration-300">
+            <a href="https://wa.me/56974962358?text=Hola%2C%20quiero%20solicitar%20una%20visita%20t%C3%A9cnica" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center bg-[#00BCD4] hover:bg-[#0097A7] text-white px-8 sm:px-12 py-4 text-base sm:text-lg font-semibold rounded-full shadow-xl transform hover:scale-105 transition-all duration-300">
               Solicitar visita
             </a>
-            <a href="https://wa.me/56974962358?text=Hola%2C%20quiero%20hablar%20por%20WhatsApp" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 border border-white text-white px-12 py-4 text-lg font-semibold rounded-full shadow-xl transform hover:scale-105 transition-all duration-300">
+            <a href="https://wa.me/56974962358?text=Hola%2C%20quiero%20hablar%20por%20WhatsApp" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center bg-white/10 hover:bg-white/20 border border-white text-white px-8 sm:px-12 py-4 text-base sm:text-lg font-semibold rounded-full shadow-xl transform hover:scale-105 transition-all duration-300">
               Hablar por WhatsApp
             </a>
           </div>

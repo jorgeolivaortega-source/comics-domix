@@ -19,7 +19,7 @@ const AboutSection = () => {
             <img
               src={aboutDanilo}
               alt="Técnico profesional Danilo Oliva Ortega"
-              className="rounded-2xl shadow-xl w-full h-[500px] object-cover object-top border-4 border-[#ECF0F1]"
+              className="rounded-2xl shadow-xl w-full h-[360px] md:h-[500px] object-cover object-top border-4 border-[#ECF0F1]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#2C3E50]/50 to-transparent rounded-2xl"></div>
           </div>
