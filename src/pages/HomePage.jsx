@@ -5,6 +5,8 @@ import ServicesSection from '@/components/ServicesSection.jsx';
 import GallerySection from '@/components/GallerySection.jsx';
 import TestimonialsSection from '@/components/TestimonialsSection.jsx';
 import ServiceRequestForm from '@/components/ServiceRequestForm.jsx';
+import heroBg from '@/assets/hero-bg-domix.jpg';
+
 const HomePage = () => {
   return <>
       <Helmet>
@@ -16,13 +18,13 @@ const HomePage = () => {
       <section className="relative min-h-screen flex items-center justify-center" id="inicio">
         {/* Background Image */}
         <div className="absolute inset-0 z-0" style={{
-        backgroundImage: 'url(https://images.unsplash.com/photo-1621750072333-c972efe8ebbd)',
+        backgroundImage: `url(${heroBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
       }}>
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-[#2C3E50]/85"></div>
+          <div className="absolute inset-0 bg-[#2C3E50]/75"></div>
         </div>
 
         {/* Content */}
