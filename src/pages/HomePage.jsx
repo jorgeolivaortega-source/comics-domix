@@ -10,8 +10,8 @@ import heroBg from '@/assets/hero-bg-domix.jpg';
 const HomePage = () => {
   return <>
       <Helmet>
-        <title>DOMI X | Danilo Oliva - Servicios de Mantención y Reparación</title>
-        <meta name="description" content="Técnico en Automatización y Control acreditado. Servicios profesionales de mantención y reparación de electrodomésticos, aire acondicionado, paneles solares e instalaciones menores en Linares, Región del Maule." />
+        <title>Servicio técnico en Linares y Talca | DOMI X Danilo Oliva</title>
+        <meta name="description" content="Servicio técnico a domicilio en Linares y Talca: reparación, mantención e instalación de electrodomésticos, aire acondicionado y paneles solares. Atención rápida, precios claros y garantía real." />
       </Helmet>
 
       {/* Hero Section */}
@@ -31,19 +31,19 @@ const HomePage = () => {
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10 text-center pt-20">
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
-            Servicio técnico en Linares,<br />
-            <span className="text-[#00BCD4]">rápido y sin enredos</span>
+            Servicio técnico a domicilio en Linares y Talca,<br />
+            <span className="text-[#00BCD4]">rápido y con garantía real</span>
           </h1>
           <p className="text-base sm:text-lg md:text-2xl text-gray-200 mb-10 md:mb-12 max-w-4xl mx-auto drop-shadow-md px-2">
-            Te explicamos todo en simple, llegamos a tiempo y dejamos tu equipo
-            funcionando con respaldo real.
+            Reparación, mantención e instalación de electrodomésticos, aire acondicionado y paneles solares.
+            Atención clara, precios transparentes y respaldo técnico.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="https://wa.me/56974962358?text=Hola%2C%20quiero%20solicitar%20una%20visita%20t%C3%A9cnica" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center bg-[#00BCD4] hover:bg-[#0097A7] text-white px-8 sm:px-12 py-4 text-base sm:text-lg font-semibold rounded-full shadow-xl transform hover:scale-105 transition-all duration-300">
               Solicitar visita
             </a>
-            <a href="https://wa.me/56974962358?text=Hola%2C%20quiero%20hablar%20por%20WhatsApp" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center bg-white/10 hover:bg-white/20 border border-white text-white px-8 sm:px-12 py-4 text-base sm:text-lg font-semibold rounded-full shadow-xl transform hover:scale-105 transition-all duration-300">
-              Hablar por WhatsApp
+            <a href="https://wa.me/56974962358?text=Hola%2C%20quiero%20pedir%20un%20diagn%C3%B3stico%20t%C3%A9cnico" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center bg-white/10 hover:bg-white/20 border border-white text-white px-8 sm:px-12 py-4 text-base sm:text-lg font-semibold rounded-full shadow-xl transform hover:scale-105 transition-all duration-300">
+              Pedir diagnóstico
             </a>
           </div>
         </div>

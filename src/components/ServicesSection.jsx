@@ -7,7 +7,7 @@ const ServicesSection = () => {
       icon: Wrench,
       titulo: 'Reparaciones',
       descripcion:
-        'Diagnosticamos y reparamos fallas para que vuelvas a funcionar rápido, con seguridad y garantía.',
+        'Detectamos la falla, explicamos causa y costo antes de intervenir, y reparamos con seguridad y garantía. Sin sorpresas.',
       imagen:
         'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80',
       ejemplos: ['Refrigeradores', 'Lavadoras y secadoras', 'Aire acondicionado'],
@@ -18,7 +18,7 @@ const ServicesSection = () => {
       icon: Settings,
       titulo: 'Mantención',
       descripcion:
-        'Prevenimos fallas con mantenciones periódicas que alargan la vida útil de tus equipos y evitan gastos mayores.',
+        'Mantenemos tus equipos en buen estado para prevenir fallas, reducir costos futuros y extender su vida útil.',
       imagen:
         'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=80',
       ejemplos: ['Limpieza y ajuste', 'Chequeo eléctrico', 'Revisión preventiva de equipos'],
@@ -29,7 +29,7 @@ const ServicesSection = () => {
       icon: Zap,
       titulo: 'Instalación',
       descripcion:
-        'Instalamos y dejamos todo operativo, probado y explicado en simple para que uses tu equipo con confianza.',
+        'Instalamos, probamos y dejamos todo operativo, con explicación clara de uso y recomendaciones de cuidado.',
       imagen:
         'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80',
       ejemplos: ['Aire acondicionado', 'Paneles solares', 'Instalaciones eléctricas menores'],
@@ -44,8 +44,8 @@ const ServicesSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Servicios</h2>
           <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-            Soluciones claras en Linares para hogares y negocios: eliges el servicio, te explicamos en simple y
-            resolvemos con respaldo.
+            Soluciones claras en Linares y Talca para hogares y negocios: eliges el servicio, te explicamos en simple y
+            resolvemos con respaldo técnico.
           </p>
         </div>
 

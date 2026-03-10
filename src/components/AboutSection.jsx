@@ -30,7 +30,9 @@ const AboutSection = () => {
               Sobre Mí
             </h2>
             <p className="text-[#2C3E50]/80 text-lg leading-relaxed mb-8">
-              Técnico en Automatización y Control acreditado con experiencia en mantención y reparación de electrodomésticos a domicilio. Especializado en aire acondicionado, paneles solares, equipos con motores eléctricos e instalaciones menores. Todos mis trabajos están garantizados y realizados con profesionalismo y confianza.
+              Soy Danilo Oliva, técnico en Automatización y Control acreditado, con atención en terreno en Linares y Talca.
+              Trabajo con diagnóstico honesto, solución segura y garantía por escrito en cada servicio.
+              Especializado en aire acondicionado, paneles solares, electrodomésticos e instalaciones menores.
             </p>
 
             {/* Badges */}

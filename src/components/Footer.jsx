@@ -28,8 +28,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-[#00BCD4] mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300">Linares, Región del Maule</p>
-                  <p className="text-gray-400 text-sm">Zona de servicio: Linares y alrededores</p>
+                  <p className="text-gray-300">Linares y Talca, Región del Maule</p>
+                  <p className="text-gray-400 text-sm">Zona de servicio: Linares, Talca y alrededores</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
