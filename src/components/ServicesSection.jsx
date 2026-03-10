@@ -66,7 +66,7 @@ const ServicesSection = () => {
                     <div className="bg-[#2C3E50] w-11 h-11 rounded-full flex items-center justify-center">
                       <Icon className="w-5 h-5 text-[#00BCD4]" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white">{item.titulo}</h3>
+                    <h3 className="text-3xl md:text-4xl font-bold text-white leading-tight">{item.titulo}</h3>
                   </div>
 
                   <p className="text-gray-300 mb-5 leading-relaxed">{item.descripcion}</p>
