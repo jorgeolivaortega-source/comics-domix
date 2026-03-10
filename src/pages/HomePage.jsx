@@ -20,7 +20,7 @@ const HomePage = () => {
         <div className="absolute inset-0 z-0" style={{
         backgroundImage: `url(${heroBg})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center 30%',
+        backgroundPosition: 'center 12%',
         backgroundAttachment: 'fixed'
       }}>
           {/* Branding Overlays */}
