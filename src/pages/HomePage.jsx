@@ -1,20 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Button } from '@/components/ui/button';
 import AboutSection from '@/components/AboutSection.jsx';
 import ServicesSection from '@/components/ServicesSection.jsx';
 import GallerySection from '@/components/GallerySection.jsx';
 import TestimonialsSection from '@/components/TestimonialsSection.jsx';
 import ServiceRequestForm from '@/components/ServiceRequestForm.jsx';
 const HomePage = () => {
-  const scrollToContact = () => {
-    const element = document.querySelector('#contacto');
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  };
   return <>
       <Helmet>
         <title>DOMI X | Danilo Oliva - Servicios de Mantención y Reparación</title>
@@ -37,17 +28,21 @@ const HomePage = () => {
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10 text-center pt-20">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
-            Servicios Profesionales de<br />
-            Mantención y Reparación de<br />
-            <span className="text-[#00BCD4]">Electrodomésticos</span>
+            Servicio técnico en Linares,<br />
+            <span className="text-[#00BCD4]">rápido y sin enredos</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto drop-shadow-md">
-            Técnico en Automatización y Control Acreditado<br />
-            Todos nuestros trabajos están garantizados
+            Te explicamos todo en simple, llegamos a tiempo y dejamos tu equipo
+            funcionando con respaldo real.
           </p>
-          <Button onClick={scrollToContact} className="bg-[#00BCD4] hover:bg-[#0097A7] text-white px-12 py-6 text-lg font-semibold rounded-full shadow-xl transform hover:scale-105 transition-all duration-300">
-            Solicitar Servicio
-          </Button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="https://wa.me/56974962358?text=Hola%2C%20quiero%20solicitar%20una%20visita%20t%C3%A9cnica" target="_blank" rel="noopener noreferrer" className="bg-[#00BCD4] hover:bg-[#0097A7] text-white px-12 py-4 text-lg font-semibold rounded-full shadow-xl transform hover:scale-105 transition-all duration-300">
+              Solicitar visita
+            </a>
+            <a href="https://wa.me/56974962358?text=Hola%2C%20quiero%20hablar%20por%20WhatsApp" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 border border-white text-white px-12 py-4 text-lg font-semibold rounded-full shadow-xl transform hover:scale-105 transition-all duration-300">
+              Hablar por WhatsApp
+            </a>
+          </div>
         </div>
 
         {/* Scroll Indicator */}
