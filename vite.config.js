@@ -9,4 +9,9 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  preview: {
+    allowedHosts: [
+      'frequent-deutschland-tend-threatened.trycloudflare.com',
+    ],
+  },
 })
