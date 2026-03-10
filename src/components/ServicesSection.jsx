@@ -1,62 +1,102 @@
 import React from 'react';
-import { AirVent, Sun, Wrench, Settings, Zap } from 'lucide-react';
-const ServicesSection = () => {
-  const services = [{
-    icon: AirVent,
-    title: 'Reparación de Aire Acondicionado',
-    description: 'Instalación, mantención y reparación de sistemas de aire acondicionado residenciales y comerciales.'
-  }, {
-    icon: Sun,
-    title: 'Instalación de Paneles Solares',
-    description: 'Instalación profesional de paneles solares para ahorro energético y sustentabilidad.'
-  }, {
-    icon: Wrench,
-    title: 'Reparación de Electrodomésticos',
-    description: 'Reparación de refrigeradores, lavadoras, secadoras y otros electrodomésticos del hogar.'
-  }, {
-    icon: Settings,
-    title: 'Mantención Preventiva',
-    description: 'Servicio de mantención preventiva para prolongar la vida útil de tus equipos.'
-  }, {
-    icon: Zap,
-    title: 'Instalaciones Menores',
-    description: 'Instalaciones eléctricas menores, conexiones y reparaciones de sistemas eléctricos.'
-  }];
-  return <section className="py-16 bg-[#2C3E50] relative overflow-hidden" id="servicios">
-      {/* Background Image Accent */}
-      <div className="absolute inset-0 opacity-5" style={{
-      backgroundImage: 'url(https://images.unsplash.com/photo-1601190921388-c2ae2f7c5278)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center'
-    }}></div>
+import { Wrench, Settings, Zap, ArrowRight } from 'lucide-react';
 
+const ServicesSection = () => {
+  const verticales = [
+    {
+      icon: Wrench,
+      titulo: 'Reparaciones',
+      descripcion:
+        'Diagnosticamos y reparamos fallas para que vuelvas a funcionar rápido, con seguridad y garantía.',
+      imagen:
+        'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80',
+      ejemplos: ['Refrigeradores', 'Lavadoras y secadoras', 'Aire acondicionado'],
+      cta: 'Solicitar reparación',
+      waText: 'Hola, quiero solicitar una reparación técnica.',
+    },
+    {
+      icon: Settings,
+      titulo: 'Mantención',
+      descripcion:
+        'Prevenimos fallas con mantenciones periódicas que alargan la vida útil de tus equipos y evitan gastos mayores.',
+      imagen:
+        'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=80',
+      ejemplos: ['Limpieza y ajuste', 'Chequeo eléctrico', 'Revisión preventiva de equipos'],
+      cta: 'Agendar mantención',
+      waText: 'Hola, quiero agendar una mantención preventiva.',
+    },
+    {
+      icon: Zap,
+      titulo: 'Instalación',
+      descripcion:
+        'Instalamos y dejamos todo operativo, probado y explicado en simple para que uses tu equipo con confianza.',
+      imagen:
+        'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80',
+      ejemplos: ['Aire acondicionado', 'Paneles solares', 'Instalaciones eléctricas menores'],
+      cta: 'Cotizar instalación',
+      waText: 'Hola, quiero cotizar una instalación técnica.',
+    },
+  ];
+
+  return (
+    <section className="py-16 bg-[#2C3E50] relative overflow-hidden" id="servicios">
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Mis Servicios
-          </h2>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Ofrezco  una amplia gama de servicios profesionales para el hogar y la empresa
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Servicios</h2>
+          <p className="text-gray-300 text-lg max-w-3xl mx-auto">
+            Soluciones claras en Linares para hogares y negocios: eliges el servicio, te explicamos en simple y
+            resolvemos con respaldo.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => {
-          const Icon = service.icon;
-          return <div key={index} className="bg-[#34495E] rounded-xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-[#2C3E50] hover:border-[#00BCD4] group">
-                <div className="bg-[#2C3E50] w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#00BCD4]/20 transition-colors">
-                  <Icon className="w-8 h-8 text-[#00BCD4]" />
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {verticales.map((item, index) => {
+            const Icon = item.icon;
+            const waLink = `https://wa.me/56974962358?text=${encodeURIComponent(item.waText)}`;
+
+            return (
+              <article
+                key={index}
+                className="bg-[#34495E] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-[#2C3E50] hover:border-[#00BCD4]"
+              >
+                <img src={item.imagen} alt={item.titulo} className="w-full h-52 object-cover" loading="lazy" />
+
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="bg-[#2C3E50] w-11 h-11 rounded-full flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-[#00BCD4]" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white">{item.titulo}</h3>
+                  </div>
+
+                  <p className="text-gray-300 mb-5 leading-relaxed">{item.descripcion}</p>
+
+                  <ul className="space-y-2 mb-6 text-gray-200 text-sm">
+                    {item.ejemplos.map((ejemplo, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <span className="text-[#00BCD4] mt-1">•</span>
+                        <span>{ejemplo}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <a
+                    href={waLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#00BCD4] hover:bg-[#0097A7] text-white px-5 py-3 rounded-full font-semibold transition-all"
+                  >
+                    {item.cta}
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
-                  {service.title}
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  {service.description}
-                </p>
-              </div>;
-        })}
+              </article>
+            );
+          })}
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ServicesSection;
