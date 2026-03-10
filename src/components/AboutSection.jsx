@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { CheckCircle, Award, Shield } from 'lucide-react';
+import aboutDanilo from '@/assets/about-danilo.jpg';
 
 const AboutSection = () => {
   const badges = [
@@ -16,9 +17,9 @@ const AboutSection = () => {
           {/* Image */}
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1571552706196-66bbc6163cef"
+              src={aboutDanilo}
               alt="Técnico profesional Danilo Oliva Ortega"
-              className="rounded-2xl shadow-xl w-full h-[500px] object-cover border-4 border-[#ECF0F1]"
+              className="rounded-2xl shadow-xl w-full h-[500px] object-cover object-top border-4 border-[#ECF0F1]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#2C3E50]/50 to-transparent rounded-2xl"></div>
           </div>
