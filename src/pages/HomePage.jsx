@@ -15,16 +15,17 @@ const HomePage = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center" id="inicio">
+      <section className="relative min-h-screen flex items-center justify-center pt-12" id="inicio">
         {/* Background Image */}
         <div className="absolute inset-0 z-0" style={{
         backgroundImage: `url(${heroBg})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center 30%',
         backgroundAttachment: 'fixed'
       }}>
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-[#2C3E50]/75"></div>
+          {/* Branding Overlays */}
+          <div className="absolute inset-0 bg-[#00BCD4]/26 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[#2C3E50]/70 via-[#2C3E50]/55 to-[#2C3E50]/72"></div>
         </div>
 
         {/* Content */}
